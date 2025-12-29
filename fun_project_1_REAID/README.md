@@ -1,15 +1,22 @@
-# Mini Quiz App - Profesi IT
+#Profesi IT Finder - Fun Project Batch 5
 
-Aplikasi kuis sederhana berbasis web yang dibuat dengan **Streamlit**. 
-Kuis ini membantu pengguna menentukan profesi IT yang cocok (Programmer, Designer, atau Data Scientist) berdasarkan pilihan jawaban mereka.
+Aplikasi berbasis web sederhana yang dibangun menggunakan **Streamlit** untuk membantu pengguna menemukan karier impian mereka di bidang Teknologi Informasi berdasarkan kepribadian dan minat.
 
-## Struktur Folder
-- `app.py`: File utama aplikasi (logika kuis & tampilan).
-- `assets/`: Folder untuk menyimpan gambar (opsional).
-- `README.md`: Dokumentasi proyek.
+#Fitur Utama
+* **Multi-Page Interface**: Alur aplikasi yang terbagi menjadi halaman Input Nama, Kuis, dan Hasil.
+* **Custom UI**: Tampilan elegan dengan tema Biru Dongker, teks putih kontras, dan aksen biru cerah.
+* **Background Batik**: Motif batik tradisional dengan opasitas rendah (3%) untuk memberikan kesan profesional dan berbudaya.
+* **Session State**: Menyimpan data pengguna secara aman selama sesi kuis berlangsung.
 
-## Cara Menjalankan Aplikasi
-1. Pastikan Python sudah terinstal.
-2. Instal library Streamlit melalui terminal:
-   ```bash
-   pip install streamlit
+#Teknologi yang Digunakan
+* **Python**: Bahasa pemrograman utama.
+* **Streamlit**: Library untuk membangun antarmuka web.
+* **Base64**: Untuk pengolahan gambar latar belakang secara lokal.
+
+#Struktur Folder
+```text
+fun_project_1_REAID/
+├── app.py              # File utama aplikasi
+├── README.md           # Dokumentasi proyek
+└── assets/
+    └── batik.jpg       # Gambar latar belakang
