@@ -15,7 +15,7 @@ current_dir = os.path.dirname(os.path.abspath(__file__))
 file_path = os.path.join(current_dir, 'assets', 'batik.jpg')
 img_data = get_base64(file_path)
 
-# --- 2. SETUP CSS (TAMPILAN) ---
+# --- 2. SETUP CSS (TEMA & BACKGROUND) ---
 if img_data:
     bg_style = f"""
     <style>
@@ -23,21 +23,47 @@ if img_data:
         background: linear-gradient(rgba(0,31,63,0.97), rgba(0,31,63,0.97)), 
                     url("data:image/jpg;base64,{img_data}");
         background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
         background-attachment: fixed;
     }}
     </style>
     """
 else:
-    bg_style = "<style>.stApp { background-color: #001F3F; }</style>"
+    bg_style = "<style>.stApp {{ background-color: #001F3F; }}</style>"
 
 st.markdown(bg_style, unsafe_allow_html=True)
 
+# CSS Tambahan untuk Teks dan UI
 st.markdown("""
     <style>
-    html, body, [class*="css"], .stMarkdown, label { color: #FFFFFF !important; font-size: 18px !important; }
-    .judul-putih { color: #FFFFFF !important; font-size: 40px !important; font-weight: bold; border-left: 10px solid #0074D9; padding-left: 15px; margin-bottom: 20px; }
-    .stButton>button { background-color: #FFFFFF; color: #001F3F; width: 100%; border-radius: 8px; font-weight: bold; height: 50px; border: none; }
-    div[data-testid="stRadio"] { background-color: #003366; padding: 20px; border-radius: 10px; margin-bottom: 10px; }
+    html, body, [class*="css"], .stMarkdown, label { 
+        color: #FFFFFF !important; 
+        font-size: 18px !important; 
+    }
+    .judul-putih { 
+        color: #FFFFFF !important; 
+        font-size: 40px !important; 
+        font-weight: bold; 
+        border-left: 10px solid #0074D9; 
+        padding-left: 15px; 
+        margin-bottom: 20px; 
+    }
+    .stButton>button { 
+        background-color: #FFFFFF; 
+        color: #001F3F; 
+        width: 100%; 
+        border-radius: 8px; 
+        font-weight: bold; 
+        height: 50px; 
+        border: none; 
+    }
+    div[data-testid="stRadio"] { 
+        background-color: #003366; 
+        padding: 20px; 
+        border-radius: 10px; 
+        margin-bottom: 10px; 
+    }
     /* Style untuk kotak informasi di halaman detail */
     .card-detail { 
         background-color: rgba(255, 255, 255, 0.1); 
@@ -55,7 +81,6 @@ with st.sidebar:
     st.info("Kuis ini menggunakan algoritma skoring sederhana untuk menentukan kecocokan karir IT kamu.")
     st.write("---")
     
-    # Bagian yang kamu minta tetap ada:
     st.subheader("Tentang Project")
     st.write("Aplikasi ini dibuat untuk tugas Fun Project #1 Batch 5.")
     
