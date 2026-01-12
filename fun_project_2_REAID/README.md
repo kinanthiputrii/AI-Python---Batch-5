@@ -1,22 +1,37 @@
-#Profesi IT Finder - Fun Project Batch 5
+# 💬 Kinanthi AI Chatbot 💬
+**Tugas Fun Project #2 - Python AI Batch 5**
 
-Aplikasi berbasis web sederhana yang dibangun menggunakan **Streamlit** untuk membantu pengguna menemukan karier impian mereka di bidang Teknologi Informasi berdasarkan kepribadian dan minat.
+Halo! Ini bot buatanku, **Kinanthi**. Selain menjawab pertanyaan, tampilannya udah kubuat cukup menarik jadi nggak bosenin waktu dipake ngobrol. Otaknya pake **Gemini 1.5 Flash** yang ditarik lewat OpenRouter, jadi lumayan pinter lah ya!
 
-#Fitur Utama
-* **Multi-Page Interface**: Alur aplikasi yang terbagi menjadi halaman Input Nama, Kuis, dan Hasil.
-* **Custom UI**: Tampilan elegan dengan tema Biru Dongker, teks putih kontras, dan aksen biru cerah.
-* **Background Batik**: Motif batik tradisional dengan opasitas rendah (3%) untuk memberikan kesan profesional dan berbudaya.
-* **Session State**: Menyimpan data pengguna secara aman selama sesi kuis berlangsung.
+---
 
-#Teknologi yang Digunakan
-* **Python**: Bahasa pemrograman utama.
-* **Streamlit**: Library untuk membangun antarmuka web.
-* **Base64**: Untuk pengolahan gambar latar belakang secara lokal.
+## Fitur-Fitur Kece
+* **Pinter & Gercep**: Pake model Gemini terbaru, responsnya nyambung dan nggak kaku.
+* **Tampilan Estetik**: Tema dark mode dengan skema warna oranye-krem biar enak di mata.
+* **Riwayat Chat**: Ada daftar chat di sidebar kiri buat inget-inget obrolan sebelumnya.
+* **Gampang Dibaca**: Tulisan AI warna hitam di bubble krem biar kontrasnya pas.
+* **Anti-Nyangkut**: Ada tombol "Hapus Semua Chat" buat reset obrolan kalo udah kepanjangan.
 
-#Struktur Folder
-```text
-fun_project_1_REAID/
-├── app.py              # File utama aplikasi
-├── README.md           # Dokumentasi proyek
-└── assets/
-    └── batik.jpg       # Gambar latar belakang
+---
+
+## Persiapan Sebelum Jalan
+Sebelum running, pastiin kamu punya:
+1. **Python** sudah terinstall (versi 3.9 ke atas lebih aman).
+2. **API Key OpenRouter** (bisa dapet gratis di openrouter.ai).
+3. **Folder Assets**: Pastiin ada folder bernama `assets` yang isinya gambar `BG-riwayat.jpg` buat background sidebarnya.
+
+---
+
+Langkah-Langkah Menjalankan
+Ikutin langkah ini ya biar nggak error:
+
+1. **Siapkan Folder Project** Taruh file `.py` kamu dan folder `assets` dalam satu folder yang sama.
+   
+2. **Buka Terminal / Command Prompt** Arahkan ke folder tempat kamu simpen file tadi.
+
+3. **Install Library yang Dibutuhkan** Ketik perintah ini dan tunggu sampe beres:
+   ```bash
+   pip install streamlit requests
+4. Jalankan Aplikasi Ketik perintah di bawah (ganti nama_file.py jadi nama file kamu, misal main.py):
+    streamlit run nama_file.py
+5. Mulai Ngobrol! Browser kamu bakal otomatis kebuka ke alamat localhost:8501. Kalo udah muncul, langsung aja tes sapa si bot-nya!
