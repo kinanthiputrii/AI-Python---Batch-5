@@ -18,7 +18,7 @@ Halo! Ini bot buatanku, **Kinanthi**. Selain menjawab pertanyaan, tampilannya ud
 Sebelum running, pastiin kamu punya:
 1. **Python** sudah terinstall (versi 3.9 ke atas lebih aman).
 2. **API Key OpenRouter** (bisa dapet gratis di openrouter.ai).
-3. **Folder Assets**: Pastiin ada folder bernama `assets` yang isinya gambar `BG-riwayat.jpg` buat background sidebarnya.
+3. **Folder Assets**: Pastikan ada folder bernama `assets` yang isinya gambar `BG-riwayat.jpg` buat background sidebarnya.
 
 ---
 
@@ -26,9 +26,7 @@ Langkah-Langkah Menjalankan
 Ikutin langkah ini ya biar nggak error:
 
 1. **Siapkan Folder Project** Taruh file `.py` kamu dan folder `assets` dalam satu folder yang sama.
-   
 2. **Buka Terminal / Command Prompt** Arahkan ke folder tempat kamu simpen file tadi.
-
 3. **Install Library yang Dibutuhkan** Ketik perintah ini dan tunggu sampe beres:
    ```bash
    pip install streamlit requests
